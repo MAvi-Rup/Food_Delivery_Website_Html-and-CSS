@@ -88,7 +88,7 @@ nav {
 .search-bar .location-icon {
   width: 24px;
   height: 24px;
-  background: url("location-icon.png") no-repeat center center;
+
   background-size: contain;
   margin-left: 16px;
 }
@@ -174,4 +174,188 @@ nav {
 .content {
   width: 400px;
   margin-left: 5rem;
+}
+
+.popular {
+  width: 80%;
+  margin: auto;
+}
+
+.popular h2 {
+  font-size: 32px;
+  font-weight: 400;
+  line-height: 48px;
+  letter-spacing: 0.30000001192092896px;
+  text-align: left;
+  margin-bottom: 2rem;
+}
+
+.restaurants {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  grid-gap: 2rem;
+}
+
+.restaurant-left img {
+  max-height: 616px;
+  max-width: 400px;
+}
+
+.restaurant-right {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 2rem;
+}
+.restaurant-paragraph {
+  display: flex;
+  align-content: center;
+}
+.restaurant-card img {
+  border-radius: 8px;
+  margin-bottom: 1rem;
+}
+
+.price-div {
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-gap: 2rem;
+}
+
+.service-work {
+  width: 70%;
+  margin: auto;
+  margin-top: 8rem;
+}
+
+.service-work h2 {
+  font-size: 48px;
+  font-weight: 400;
+  line-height: 64px;
+  letter-spacing: 0.30000001192092896px;
+  text-align: center;
+  margin-bottom: 5rems;
+}
+
+.step-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+.step h3 {
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 24px;
+  letter-spacing: 0.30000001192092896px;
+  text-align: center;
+  color: rgba(244, 4, 105, 1);
+}
+
+.step p {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0.30000001192092896px;
+  text-align: center;
+  color: rgba(0, 0, 0, 0.85);
+}
+
+.service-work .step {
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+.service-work .icon-bg {
+  display: inline-block;
+  width: 100px;
+  height: 100px;
+  margin-bottom: 20px;
+  background: url("./Images/bg-pink.png") no-repeat bottom;
+  background-size: cover;
+  border-radius: 50%;
+}
+
+.icon-bg {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.icon-bg img {
+  margin-top: -10px;
+}
+.service-work .step img {
+  width: 60px;
+  height: 60px;
+}
+
+.service-work .step h3 {
+  font-size: 24px;
+  margin-bottom: 10px;
+  font-family: "Jost", sans-serif;
+}
+
+.service-work .step p {
+  font-size: 16px;
+  font-family: "Poppins", sans-serif;
+}
+
+.app-download {
+  width: 80%;
+  margin: auto;
+
+  background: url("./Images/Background.png") no-repeat;
+  background-size: cover;
+  color: white;
+  padding: 60px 20px;
+
+  border-radius: 20px;
+  margin-top: 8rem;
+}
+
+.content {
+  width: 50%;
+}
+
+.content h2 {
+  font-size: 48px;
+  font-weight: 400;
+  line-height: 64px;
+  letter-spacing: 0.30000001192092896px;
+  text-align: left;
+}
+.app-download .buttons {
+  display: flex;
+  gap: 20px;
+}
+
+.app-download button {
+  padding: 15px 30px;
+  font-size: 21px;
+  font-weight: 600;
+  line-height: 24px;
+  letter-spacing: 1px;
+  text-align: center;
+
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  color: rgba(255, 255, 255, 1);
+  margin-top: 2rem;
+}
+
+.app-download button.download {
+  background-color: rgba(40, 54, 70, 1);
+  color: white;
+}
+
+.app-download button.browse {
+  text-decoration: none;
+  color: #fdfdfd;
+}
+.app-download button.browse {
+  background: transparent;
+  color: rgba(255, 255, 255, 1);
 }
