@@ -1,4 +1,177 @@
 * {
   margin: 0;
   padding: 0;
+  font-family: Jost;
+}
+
+/* Header Styles */
+header {
+  background-color: #ffffff;
+  width: 90%;
+  margin: auto;
+  padding: 20px 0px;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 48px;
+  letter-spacing: 0.30000001192092896px;
+  text-align: left;
+  color: rgba(244, 4, 105, 1);
+}
+
+.sign-in {
+  font-family: Jost;
+  font-size: 18px;
+  text-decoration: none;
+  font-weight: 600;
+  line-height: 24px;
+  letter-spacing: 0.30000001192092896px;
+  text-align: left;
+}
+
+/* Hero Section Styles */
+.hero {
+  background-image: url("./Images/Preset.png");
+  background-size: cover;
+  background-position: center;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #ffffff;
+  text-align: center;
+}
+
+.hero h1 {
+  font-size: 56px;
+  font-weight: 400;
+  line-height: 72px;
+  letter-spacing: 0.4000000059604645px;
+  text-align: center;
+  margin-bottom: 5rem;
+}
+
+.hero-content {
+  max-width: 600px;
+}
+
+.search-container {
+  position: absolute;
+  left: 21.74%;
+  right: 21.67%;
+  top: 51.59%;
+  bottom: 37.3%;
+  display: flex;
+  justify-content: center;
+}
+
+.search-bar {
+  display: flex;
+  align-items: center;
+  width: 815px;
+  height: 56px;
+  background-color: white;
+  border-radius: 28px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+.search-bar .location-icon {
+  width: 24px;
+  height: 24px;
+  background: url("location-icon.png") no-repeat center center;
+  background-size: contain;
+  margin-left: 16px;
+}
+
+.search-bar input {
+  flex: 1;
+  height: 100%;
+  border: none;
+  padding: 0 16px;
+  font-size: 18px;
+  border-radius: 0;
+  outline: none;
+}
+
+.search-bar button {
+  height: 100%;
+  padding: 0 24px;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 24px;
+  letter-spacing: 0.3px;
+  text-align: center;
+  border: none;
+  background-color: #ff007f;
+  color: white;
+  cursor: pointer;
+  border-radius: 0;
+  outline: none;
+}
+
+.btn {
+  background-color: #ff6b6b;
+  color: #ffffff;
+  text-decoration: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  display: inline-block;
+  margin-top: 20px;
+}
+
+.taste {
+  width: 80%;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  align-items: center;
+  padding: 60px 20px;
+}
+
+.taste h2 {
+  font-size: 48px;
+  font-weight: 400;
+  line-height: 64px;
+  letter-spacing: 0.30000001192092896px;
+  text-align: left;
+}
+
+.taste p {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0.30000001192092896px;
+  text-align: left;
+}
+
+.taste button {
+  padding: 10px 20px;
+  font-size: 21px;
+  font-weight: 600;
+  line-height: 24px;
+  letter-spacing: 1px;
+  text-align: center;
+
+  border: none;
+  background-color: #ff007f;
+  color: white;
+  cursor: pointer;
+  border-radius: 28px;
+  margin-top: 2rem;
+}
+
+.content {
+  width: 400px;
+  margin-left: 5rem;
 }

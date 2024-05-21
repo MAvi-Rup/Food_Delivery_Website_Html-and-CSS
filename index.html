@@ -3,15 +3,57 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Food Delivery Website</title>
-    <link rel="stylesheet" href="./style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <title>Food Delivery</title>
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <header>
-      <div>FoodDelivery</div>
-      <div>
-        <button>Sign In</button>
-      </div>
+      <nav class="navbar">
+        <div class="logo">FoodDelivery</div>
+
+        <a href="#" class="sign-in">Sign In</a>
+      </nav>
     </header>
+
+    <main>
+      <section class="hero">
+        <h1>Your favorite food, delivered to you</h1>
+        <div class="search-container">
+          <div class="search-bar">
+            <div class="location-icon">
+              <img src="/Images/location.png" alt="" srcset="" />
+            </div>
+            <input type="text" placeholder="New York" />
+            <button>Search</button>
+          </div>
+        </div>
+      </section>
+
+      <section class="taste">
+        <img src="./Images/taste.png" alt="Delicious Food" />
+        <div class="content">
+          <h2>Take a taste, come join us. Life is so endlessly delicious</h2>
+          <p>
+            In the artist's own experience, of course, art is fundamentally
+            indefinable, unsayable. In any case, there is something special
+            about its demand upon the soul, something very mysterious in the
+            forms it takes.
+          </p>
+          <button>Download our App</button>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <h1>This is Footer</h1>
+    </footer>
+
+    <script src="script.js"></script>
   </body>
 </html>
