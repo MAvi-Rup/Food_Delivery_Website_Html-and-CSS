@@ -35,9 +35,9 @@ nav {
   line-height: 24px;
   letter-spacing: 0.30000001192092896px;
   text-align: left;
+  color: black;
 }
 
-/* Hero Section Styles */
 .hero {
   background-image: url("./Images/Preset.png");
   background-size: cover;
@@ -120,10 +120,11 @@ nav {
 }
 
 .taste {
-  width: 80%;
+  max-width: 80%;
   margin: auto;
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: repeat(2, 1fr);
+  grid-auto-flow: column;
   gap: 20px;
   align-items: center;
   padding: 60px 20px;
@@ -145,29 +146,35 @@ nav {
   text-align: left;
 }
 
-.taste button {
-  padding: 10px 20px;
+.content {
+  width: 70%;
+  margin-left: 5rem;
+}
+
+.content h2 {
+  font-size: 48px;
+  font-weight: 400;
+  line-height: 64px;
+  letter-spacing: 0.30000001192092896px;
+  text-align: left;
+}
+
+.content button {
   font-size: 21px;
   font-weight: 600;
   line-height: 24px;
   letter-spacing: 1px;
   text-align: center;
-
-  border: none;
   background-color: #ff007f;
-  color: white;
+  padding: 10px 20px;
   cursor: pointer;
   border-radius: 28px;
   margin-top: 2rem;
+  border: none;
+  color: #fdfdfd;
 }
-
-.content {
-  width: 400px;
-  margin-left: 5rem;
-}
-
 .popular {
-  width: 80%;
+  max-width: 80%;
   margin: auto;
 }
 
@@ -196,19 +203,36 @@ nav {
   grid-template-columns: 1fr 1fr;
   grid-gap: 2rem;
 }
+
 .restaurant-paragraph {
   display: flex;
-  align-content: center;
+  align-items: center;
+  align-self: center;
 }
+
 .restaurant-card img {
   border-radius: 8px;
   margin-bottom: 1rem;
+  width: 100%;
+  height: auto;
 }
 
 .price-div {
   display: grid;
+  align-items: center;
   grid-template-columns: auto auto;
   grid-gap: 2rem;
+}
+
+.restaurant-paragraph-right {
+  display: flex;
+  align-items: center;
+  align-self: center;
+}
+.restaurant-paragraph-right img {
+  width: 18px;
+  height: 18px;
+  margin-top: 15px;
 }
 
 .service-work {
@@ -304,17 +328,6 @@ nav {
   margin-top: 8rem;
 }
 
-.content {
-  width: 50%;
-}
-
-.content h2 {
-  font-size: 48px;
-  font-weight: 400;
-  line-height: 64px;
-  letter-spacing: 0.30000001192092896px;
-  text-align: left;
-}
 .app-download .buttons {
   display: flex;
   gap: 20px;
@@ -380,10 +393,11 @@ nav {
   width: 65%;
   margin: auto;
   margin-top: 2rem;
-  height: 343px;
+  height: 500px;
   align-items: center;
   justify-content: center;
-  border-radius: 25px;
+  border: none;
+  border-radius: 30px;
   background: url("./Images/Rectangle.png") no-repeat center;
 }
 
@@ -413,6 +427,7 @@ nav {
   text-align: center;
   color: rgba(244, 4, 105, 1);
   margin-top: 2rem;
+  margin-bottom: 2rem;
 }
 
 .client-container {
@@ -425,10 +440,12 @@ nav {
 }
 
 footer {
-  background: url("./Images/Background\ \(1\).png") no-repeat bottom;
+  width: 100%;
+  background: url("./Images/Background\ \(1\).png") no-repeat right bottom;
   color: white;
-  position: relative;
+
   margin-top: 5rem;
+  padding-bottom: 5rem;
 }
 
 .footer-container {
@@ -452,13 +469,85 @@ footer {
   letter-spacing: 0.30000001192092896px;
   text-align: left;
   margin-left: 4rem;
+  max-width: 100%;
 }
 
 .footer-address {
   color: rgba(0, 0, 0, 0.85);
-  padding-top: 5rem;
+  padding-top: 4rem;
 }
 
 .footer-address div {
-  margin-top: 25px;
+  margin-top: 5rem;
+}
+.footer-menu {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 3rem;
+  margin-left: 8rem;
+  margin-top: 7rem;
+}
+.footer-menu li {
+  list-style: none;
+  color: rgba(0, 0, 0, 0.85);
+}
+
+/* 
+Media Query */
+@media (max-width: 768px) {
+  .taste {
+    grid-template-columns: 1fr;
+    grid-auto-flow: row;
+    padding: 40px 20px;
+  }
+
+  .taste img {
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+  }
+
+  .content {
+    text-align: center;
+    margin-top: 2rem;
+  }
+
+  .restaurants {
+    grid-template-columns: 1fr;
+  }
+
+  .restaurant-left img {
+    max-height: none;
+    max-width: 100%;
+  }
+
+  .restaurant-right {
+    grid-template-columns: 1fr;
+  }
+
+  .footer-menu {
+    display: flex;
+
+    margin-left: 0px;
+  }
+
+  .footer-container {
+    grid-template-columns: 1fr;
+  }
+  .footer-navbar {
+    margin-left: auto;
+    flex-wrap: nowrap;
+  }
+}
+
+@media (max-width: 480px) {
+  .price-div {
+    grid-template-columns: 1fr;
+    grid-gap: 1rem;
+  }
+
+  .restaurant-paragraph {
+    justify-content: center;
+    margin-bottom: 0.5rem;
+  }
 }
