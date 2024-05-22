@@ -77,7 +77,7 @@ nav {
 .search-bar {
   display: flex;
   align-items: center;
-  width: 815px;
+  width: 50rem;
   height: 56px;
   background-color: white;
   border-radius: 28px;
@@ -117,16 +117,6 @@ nav {
   cursor: pointer;
   border-radius: 0;
   outline: none;
-}
-
-.btn {
-  background-color: #ff6b6b;
-  color: #ffffff;
-  text-decoration: none;
-  padding: 10px 20px;
-  border-radius: 4px;
-  display: inline-block;
-  margin-top: 20px;
 }
 
 .taste {
@@ -233,7 +223,7 @@ nav {
   line-height: 64px;
   letter-spacing: 0.30000001192092896px;
   text-align: center;
-  margin-bottom: 5rems;
+  margin-bottom: 5rem;
 }
 
 .step-container {
@@ -261,7 +251,6 @@ nav {
 }
 
 .service-work .step {
-  background-color: white;
   padding: 20px;
   border-radius: 8px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
@@ -343,6 +332,7 @@ nav {
   border-radius: 25px;
   cursor: pointer;
   color: rgba(255, 255, 255, 1);
+
   margin-top: 2rem;
 }
 
@@ -358,4 +348,117 @@ nav {
 .app-download button.browse {
   background: transparent;
   color: rgba(255, 255, 255, 1);
+}
+.testimonial-container {
+  width: 70%;
+  margin: auto;
+  margin-top: 5rem;
+}
+
+.testimonial-container h2 {
+  font-size: 48px;
+  font-weight: 400;
+  line-height: 64px;
+  letter-spacing: 0.30000001192092896px;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.testimonial p {
+  margin: auto;
+  max-width: 50rem;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0.30000001192092896px;
+  text-align: center;
+}
+
+.slider-container {
+  display: flex;
+  gap: 1rem;
+  width: 65%;
+  margin: auto;
+  margin-top: 2rem;
+  height: 343px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 25px;
+  background: url("./Images/Rectangle.png") no-repeat center;
+}
+
+.slider p {
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 36px;
+  letter-spacing: 0.30000001192092896px;
+  text-align: center;
+  color: #fdfdfd;
+  padding: 0px 6rem;
+}
+.slider > div {
+  text-align: center;
+}
+
+.slider > div > img {
+  border-radius: 50%;
+  margin-top: 2rem;
+}
+
+.slider h3 {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 24px;
+  letter-spacing: 0.30000001192092896px;
+  text-align: center;
+  color: rgba(244, 4, 105, 1);
+  margin-top: 2rem;
+}
+
+.client-container {
+  width: 65%;
+  margin: auto;
+  margin-top: 3rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+footer {
+  background: url("./Images/Background\ \(1\).png") no-repeat bottom;
+  color: white;
+  position: relative;
+  margin-top: 5rem;
+}
+
+.footer-container {
+  width: 90%;
+  margin-left: auto;
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+  align-items: center;
+}
+
+.footer-navbar {
+  display: flex;
+  text-decoration: none;
+  gap: 3rem;
+  flex-wrap: wrap;
+  color: rgba(0, 0, 0, 0.85);
+  list-style: none;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 24px;
+  letter-spacing: 0.30000001192092896px;
+  text-align: left;
+  margin-left: 4rem;
+}
+
+.footer-address {
+  color: rgba(0, 0, 0, 0.85);
+  padding-top: 5rem;
+}
+
+.footer-address div {
+  margin-top: 25px;
 }
